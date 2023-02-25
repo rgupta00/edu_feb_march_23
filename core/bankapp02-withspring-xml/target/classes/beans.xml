@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- -
+	scope: scope="singleton"
+	bean life cycle *
+	
+	primary="true"
+	autowire-candidate="false"
+	AS-> List<MessagingService>*
+	 -->
+
+	<bean id="accService" class="com.bankapp.service.AccountService" autowire="byType">
+	</bean>
+
+	
+	<bean id="ms1" class="com.bankapp.service.SmsService" primary="true"/>
+	
+	<bean id="ms2" class="com.bankapp.service.EmailService" />
+</beans>

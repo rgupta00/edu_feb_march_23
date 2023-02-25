@@ -1,0 +1,156 @@
+
+
+
+
+
+
+
+
+
+how to install the sw?
+==========add link here===============
+
+
+sw required
+jdk 11
+maven
+https://maven.apache.org/download.cgi
+sts
+https://dist.springsource.com/release/STS/index.html
+
+mysql
+https://dev.mysql.com/downloads/mysql/
+
+sw req:
+------------
+jdk 11 + maven + sts 3/4 + mysql + laptop 8gb/16gb + ssd
+
+
+code :
+https://github.com/rgupta00/edu_feb_march_23
+
+ppt pdf and other stuff:
+https://drive.google.com/drive/folders/1c0G3cjZIobypX4EwpZj4QkTLBQT-MhPF?usp=sharing
+
+workshop on design pattern
+https://drive.google.com/file/d/1_PjqGoSEnz9Ph-QoSnGTJ1gboJlIuZBj/view?usp=sharing
+
+Design pattern: gang of 4
+SOLID principle--> GOF(23 patterns)
+
+singleton 
+factory 
+proxy
+strategy
+observer
+...
+MVC
+
+playlist on core java
+https://www.youtube.com/playlist?list=PLv2-IhRmhbySgIQo3rH8KnclTSOYAp2xG
+
+
+course plan:
+------------
+
+8 session 3X8=24hr
+
+Session wise plan:
+
+session 1: Spring intro and DI
+Session 2: Spring AOP
+Session 3: Spring Jdbc and hibernate
+Session 4: Spring MVC 
+Session 5: lagacy integration: Struts1/2+ spring,  Spring Boot
+Session 6: Spring Security
+Session 7: Spring integration
+Session 8: project work
+
+
+
+
+
+      <properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+
+	</properties>
+      
+      
+      
+     Why? spring 
+     
+     AccountService a->b
+     EmailService
+     
+     
+     MVC 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+Bank application:
+----------------
+		
+		
+		
+public interface AccountDao {
+	public List<Account> getAll();
+	public Account getById(int id);
+	public void updateAccount(Account account);
+	public void addAccount(Account account);
+	public void deleteAccount(int id);
+}
+
+
+public class AccountDaoCollectionImpl implements AccountDao{
+	private Map<Integer, Account> accounts=new HashMap<>();
+	
+	public AccountDaoCollectionImpl() {
+		accounts.put(1, new Account(1, "raj", 560000.00));
+		accounts.put(2, new Account(2, "ekta", 760000.00));
+	}
+	@Override
+	public List<Account> getAll() {
+		System.out.println("getAll using hard coded collection...");
+		return new ArrayList<Account>(accounts.values());
+	}
+
+	@Override
+	public Account getById(int id) {
+		return accounts.get(id);
+	}
+
+	@Override
+	public void updateAccount(Account account) {
+		try {
+			Thread.sleep(1000);
+		}catch(InterruptedException e) {}
+		accounts.put(account.getId(), account);
+	}
+
+	@Override
+	public void addAccount(Account account) {
+		
+	}
+
+	@Override
+	public void deleteAccount(int id) {
+		
+	}
+
+}
+
+
