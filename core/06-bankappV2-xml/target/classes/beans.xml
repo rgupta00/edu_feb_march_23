@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="accService" class="com.bankapp.service.impl.AccountServiceImpl" autowire="constructor">
+	</bean>
+
+	<bean id="accountDao" class="com.bankapp.dao.AccountDaoMapImpl"/>
+	
+	<bean id="ms1" class="com.bankapp.service.impl.SmsService" primary="true"/>
+	
+	<bean id="ms2" class="com.bankapp.service.impl.EmailService" />
+</beans>

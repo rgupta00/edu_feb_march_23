@@ -3,6 +3,7 @@ package com.bankapp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 //HLM			LLM
 /*
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Component;
 	</bean>
  */
 
-@Component(value = "accService")
+@Service(value = "accService")
 public class AccountService {
 
 	private MessingService messingService;

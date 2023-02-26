@@ -4,12 +4,6 @@ package com.bankapp.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//HLM			LLM
-/*
- * 
-	<bean id="accService" class="com.bankapp.service.AccountService" autowire="byType">
-	</bean>
- */
 
 @Component(value = "accService")
 public class AccountService {

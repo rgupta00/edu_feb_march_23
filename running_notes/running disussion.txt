@@ -7,7 +7,8 @@ spring training:
 trainer profile
 https://www.linkedin.com/in/rajeevguptajavatrainer/
 
-
+core java playlist
+https://www.youtube.com/playlist?list=PLv2-IhRmhbySgIQo3rH8KnclTSOYAp2xG
 
 
 how to install the sw?
@@ -90,12 +91,50 @@ Session 8: project work
      MVC 
       
       
+      NoSuchBeanDefinitionException
+      
+      @Component vs @Bean used to create the bean
       
       
       
       
+      how to install lombok
+      https://www.youtube.com/watch?v=QfZkZ0PbkWo
       
       
+      
+ Session 2:
+ Spring DI bank application skeleton
+ Spring XML configuration in details
+ Spring bean life cycle
+ Spring java config and anno in details
+ interview questions?
+ 
+ What is AOP, usecases
+ how we do it ? aspect J, java reflection
+ 
+ jdbc hello world, problem with jdbc, 
+ 
+ 
+ spring help us
+     
+      
+      
+      
+      Pre req for next session:
+      
+      java brain: hibernate
+      https://www.youtube.com/playlist?list=PL4AFF701184976B25
+      
+      
+       java jdbc
+      https://www.youtube.com/playlist?list=PLsyeobzWxl7rU7Jz3zDRpqB-EODzBbHOI
+      
+      
+      Session 3: plan
+      AOP
+      Spring Jbdc
+      Spring HIb
       
       
       
