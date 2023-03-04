@@ -1,0 +1,79 @@
+package com.demo;
+
+import java.math.BigDecimal;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+public class Product /* implements BeanNameAware, ApplicationContextAware */{
+	private Integer id;
+	private String name;
+	private BigDecimal price;
+	private boolean isAvailable;
+
+
+	private void myInitProduct() {
+		System.out.println("myInitProduct");
+	}
+	
+	public Product() {
+		System.out.println("default ctr is called");
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		System.out.println(" public void setId(Integer id) is called");
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	public boolean isAvailable() {
+		return isAvailable;
+	}
+
+	public void setAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", isAvailable=" + isAvailable + "]";
+	}
+
+//	@Override
+//	public void setBeanName(String name) {
+//		System.out.println("public void setBeanName(String name) is called");
+//	}
+//
+//	@Override
+//	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+//		System.out.println("public void setApplicationContext(ApplicationContext applicationContext)");
+//	}
+
+
+	
+}

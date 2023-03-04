@@ -1,0 +1,23 @@
+package com.demo;
+import java.util.*;
+public class DataBean {
+	
+	private List<String>cities;
+	
+	private int x;
+	private int y;
+	private double z;
+	private String name;
+	
+	private boolean status;
+
+	@Override
+	public String toString() {
+		return "DataBean [cities=" + cities + ", x=" + x + ", y=" + y + ", z=" + z + ", name=" + name + ", status="
+				+ status + "]";
+	}
+	
+	
+	
+
+}

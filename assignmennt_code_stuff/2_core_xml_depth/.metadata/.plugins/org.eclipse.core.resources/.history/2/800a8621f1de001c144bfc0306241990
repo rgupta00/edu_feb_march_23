@@ -1,0 +1,16 @@
+package com.demo;
+
+import java.util.*;
+
+public class ProductCollection {
+
+	private List<Product> products= new ArrayList<Product>();
+
+	public List<Product> getProducts() {
+		products.add(new Product(121, "laptop", 67000.00, false));
+		return products;
+	}
+
+	
+	
+}

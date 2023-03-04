@@ -1,0 +1,16 @@
+package com.demo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class A_HelloWorld {
+
+	public static void main(String[] args) {
+		ApplicationContext context=
+				new ClassPathXmlApplicationContext("demo.xml");
+		
+		Product product=(Product) context.getBean("p");
+		
+		System.out.println(product);
+	}
+}

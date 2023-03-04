@@ -1,0 +1,5 @@
+package com.productapp.dao;
+
+public interface ProductDao {
+
+}

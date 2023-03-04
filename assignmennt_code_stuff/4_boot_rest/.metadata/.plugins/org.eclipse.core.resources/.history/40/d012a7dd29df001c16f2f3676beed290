@@ -1,0 +1,10 @@
+@Configuration
+@EnableCaching
+public class CachingConfig {
+	@Bean
+	public CacheManager cacheManager(){
+		ConcurrentMapCacheManager cacheManager=new ConcurrentMapCacheManager("products");
+		return cacheManager;
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+i	java:S106"9Replace this use of System.out or System.err by a logger.(‚¨¥¦úÿÿÿÿHRMAJORZ
+CODE_SMELL
+l	java:S125"<This block of commented-out lines of code should be removed.(©–ÌëûÿÿÿÿHRMAJORZ
+CODE_SMELL
+]
+java:S1128"1Remove this unused import 'java.math.BigDecimal'.(êêŠHRMINORZ
+CODE_SMELL
+k
+java:S1128
+":Remove this unused import 'com.productapp.entity.Product'.(İß¯ùÿÿÿÿH’RMINORZ
+CODE_SMELL

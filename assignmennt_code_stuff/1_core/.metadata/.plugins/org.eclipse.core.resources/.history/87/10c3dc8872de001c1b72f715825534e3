@@ -1,0 +1,11 @@
+package com.productapp.dao;
+
+import java.math.BigDecimal;
+import java.util.*;
+
+import org.springframework.stereotype.Repository;
+@Repository
+public class ProductDaoJdbcImpl implements ProductDao{
+
+	
+}

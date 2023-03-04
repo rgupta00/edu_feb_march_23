@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bank" class="com.demo.Bank">
+		<property name="bankName" value="SBI Delhi"/>
+		
+		<property name="accounts">
+			<list>
+				<ref bean="acc1"/>
+				<ref bean="acc2"/>
+				<ref bean="acc3"/>
+			</list>
+		
+		</property>
+		
+		<property name="customerCount">
+			<map>
+				<entry key="SBI Preet vihar" value="2000"></entry>
+				<entry key="SBI Kr vihar" value="2090"></entry>
+			</map>
+		</property>
+		
+		<property name="branches">
+			<map>
+				<entry key="SBI Preet vihar" value-ref="bl1"></entry>
+				<entry key="SBI Kr vihar" value-ref="bl2"></entry>
+			</map>
+		
+		</property>
+		
+		<property name="branchManagers">
+			<props>
+				<prop key="SBI Preet vihar">Mr Ramesh Kr </prop>
+				<prop key="SBI Kr vihar">Mr Kapil Gupta </prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="bl1" class="com.demo.BranchLocation">
+		<property name="address" value="SBI Preet vihar Delhi 91"/>
+		<property name="city" value="Delhi"/>
+	</bean>
+	
+	
+	<bean id="bl2" class="com.demo.BranchLocation">
+		<property name="address" value="SBI Kr vihar Delhi 51"/>
+		<property name="city" value="Delhi"/>
+	</bean>
+	
+	<bean id="acc1" class="com.demo.Account">
+		<property name="id" value="33"/>
+		<property name="name" value="sumit"/>
+		<property name="balance" value="5000"/>
+	</bean>
+	
+	<bean id="acc2" class="com.demo.Account">
+		<property name="id" value="3"/>
+		<property name="name" value="rajat"/>
+		<property name="balance" value="9000"/>
+	</bean>
+	
+	
+	<bean id="acc3" class="com.demo.Account">
+		<property name="id" value="330"/>
+		<property name="name" value="ekta"/>
+		<property name="balance" value="50000"/>
+	</bean>
+	
+</beans>

@@ -1,0 +1,17 @@
+package com.demo;
+import java.util.*;
+public class DataBean {
+	
+	private List<String>cities;
+	
+	private int x;
+	private int y;
+	private double z;
+	private String name;
+	
+	private boolean status;
+	
+	
+	
+
+}

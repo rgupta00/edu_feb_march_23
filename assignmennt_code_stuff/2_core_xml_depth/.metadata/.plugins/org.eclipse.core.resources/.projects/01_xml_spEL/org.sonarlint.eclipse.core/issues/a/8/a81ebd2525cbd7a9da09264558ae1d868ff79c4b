@@ -1,0 +1,6 @@
+
+r
+java:S1128":Remove this unused import 'javax.sound.midi.SysexMessage'.(áÔíÄúÿÿÿÿ8Ú“í0H„RMINORZ
+CODE_SMELL
+p	java:S106"9Replace this use of System.out or System.err by a logger.(Úàİ¸ıÿÿÿÿ8Ú“í0HƒRMAJORZ
+CODE_SMELL

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="12_productapp_caching_schedule"/>
+<aop-project name="01_productapp"/>
+<aop-project name="03_productapp_spring_data"/>
+<aop-project name="10_productapp_tomcat"/>
+<aop-project name="07_productapp_prop_file"/>
+<aop-project name="04_productapp_response_entity"/>
+<aop-project name="06_productapp_303"/>
+<aop-project name="11_productapp_OpenAPI_3"/>
+<aop-project name="13_productapp_jsp"/>
+<aop-project name="09_productapp_richardson"/>
+<aop-project name="02_productapp_jpa"/>
+<aop-project name="05_productapp_ex_handling"/>
+<aop-project name="08_productapp_xml_json"/>
+</aop-reference-model>

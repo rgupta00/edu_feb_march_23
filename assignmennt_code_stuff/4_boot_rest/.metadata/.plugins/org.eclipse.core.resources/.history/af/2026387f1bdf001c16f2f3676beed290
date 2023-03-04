@@ -1,0 +1,11 @@
+product.name.absent=Please provide product name
+product.name.invalid=Please provide valid product name
+
+product.price.absent=Please provide product price
+product.price.invalid=Please provide correct product price
+
+account.phone.absent=Please provide phone 
+account.phone.invalid=Please provide correct phone number of 10 digits
+
+account.balance.absent=Please provide initial balance 
+account.balance.invalid=Please provide correct initial balance bw 100 to 100000

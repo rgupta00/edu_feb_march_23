@@ -15,6 +15,7 @@ how to install the sw?
 https://drive.google.com/file/d/1JG7xziK6o0EgDW5U0d5H4q-OCxsZj_YF/view
 
 
+
 sw required
 jdk 11
 maven
@@ -194,5 +195,51 @@ public class AccountDaoCollectionImpl implements AccountDao{
 	}
 
 }
+
+
+
+
+
+Exception in thread "main" java.lang.ClassCastException: 
+class com.sun.proxy.$Proxy29 cannot be cast to class com.bankapp.service.impl.AccountServiceImpl (com.sun.proxy.$Proxy29 and com.bankapp.service.impl.AccountServiceImpl are in unnamed module of loader 'app')
+	at com.bankapp.controller.Main.main(Main.java:18)
+
+
+
+
+
+
+Session 3: 
+
+Recap
+Spring AOP
+Spring Jdbc and hibernate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

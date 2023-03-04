@@ -1,0 +1,7 @@
+public class MarkSheet {
+
+	private String studentName;
+	
+	private Integer marksInMath;
+	private Integer marksInPhysics;
+	private Integer marksInChemistry;

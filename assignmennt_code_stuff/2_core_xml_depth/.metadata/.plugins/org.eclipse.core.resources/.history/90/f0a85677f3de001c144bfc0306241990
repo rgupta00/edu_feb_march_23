@@ -1,0 +1,8 @@
+package com.demo1;
+
+public class Foo {
+	private Double randomNumber;
+	private Double pi;
+	
+	
+}

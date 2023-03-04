@@ -15,7 +15,8 @@ public class Main {
 	public static void main(String[] args) {
 		//Problem is that programmer is maintaining the dep
 		
-		AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(AppConfig.class);
+		AnnotationConfigApplicationContext ctx=
+				new AnnotationConfigApplicationContext(AppConfig.class);
 
 		AccountServiceImpl accountService=(AccountServiceImpl) ctx.getBean("accService");
 		 

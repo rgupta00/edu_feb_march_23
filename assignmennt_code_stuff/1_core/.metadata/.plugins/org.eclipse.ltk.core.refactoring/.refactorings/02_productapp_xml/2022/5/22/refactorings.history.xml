@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;bean&apos; from expression &apos;applicationContext.getBean(&quot;productService&quot;,ProductService.class)&apos;&#x0A;- Original project: &apos;02_productapp_xml&apos;&#x0A;- Variable name: &apos;bean&apos;&#x0A;- Destination method: &apos;com.productapp.controller.Main.main(...)&apos;&#x0A;- Variable expression: &apos;applicationContext.getBean(&quot;productService&quot;,ProductService.class)&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;bean&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.productapp.controller{Main.java" name="bean" replace="true" selection="502 0" stamp="1653731478310" varType="false" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package com.productapp.util;
+
+import java.time.LocalDate;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class ErrorInfo {
+	private String errorMessage;
+	private int errorCode;
+	private String toContact;
+	private LocalDate timeStamp;
+	
+}

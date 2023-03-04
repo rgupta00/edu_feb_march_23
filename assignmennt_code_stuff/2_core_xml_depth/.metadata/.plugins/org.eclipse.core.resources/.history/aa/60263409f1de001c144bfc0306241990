@@ -1,0 +1,23 @@
+package com.demo;
+
+import java.util.*;
+
+public class ProductCollection {
+	private String productStoreName;
+	private List<Product> products;
+
+	public void setProductStoreName(String productStoreName) {
+		this.productStoreName = productStoreName;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
+
+	public void printDetails() {
+		System.out.println("productStoreName: " + productStoreName);
+		System.out.println("--------products in store -------------");
+		products.forEach(p -> System.out.println(p));
+
+	}
+}

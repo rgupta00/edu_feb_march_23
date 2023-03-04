@@ -1,0 +1,19 @@
+package com.productapp.controller;
+@Controller
+public class ProductController {
+	
+	private ProductService productService;
+
+	@Autowired
+	public ProductController(ProductService productService) {
+		this.productService = productService;
+	}
+	
+	@GetMapping("products")
+	public ModelAndView allProducts(ModelAndView mv) {
+		mv.setViewName("products");
+		mv.addObject("products", productService.findAll());
+		
+		return mv;
+	}
+}

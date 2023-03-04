@@ -1,0 +1,6 @@
+1653730713017	Rename type 'ProductDao'
+1653730728788	Rename type 'ProductDaoImpl'
+1653730763385	Rename type 'MAin'
+1653730866293	Extract local variable 'all'
+1653731138946	Rename type 'ProductDaoImpl'
+1653731149713	Copy compilation unit

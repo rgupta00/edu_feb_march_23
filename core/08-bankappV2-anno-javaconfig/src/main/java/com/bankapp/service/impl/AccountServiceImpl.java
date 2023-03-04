@@ -17,25 +17,18 @@ public class AccountServiceImpl implements AccountService {
 
 	private AccountDao accountDao;
 
-	
-	//public AccountServiceImpl() {}
-
+	@Autowired
 	public AccountServiceImpl(MessingService messingService, AccountDao accountDao) {
 		this.messingService = messingService;
 		this.accountDao = accountDao;
 	}
 
-//	public void setMessingService(MessingService messingService) {
-//		this.messingService = messingService;
-//	}
-//
-//
-//	public void setAccountDao(AccountDao accountDao) {
-//		this.accountDao = accountDao;
-//	}
-
 	public void transfer(int fromAccId, int toAccId, double amount) {
 
+		//log 4j
+		//tx
+		//valiatation
+		//caching
 		Account fromAcc = accountDao.getById(fromAccId);
 		Account toAcc = accountDao.getById(toAccId);
 
