@@ -1,10 +1,0 @@
-
-`
-java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8”ì¨õ0H©RMINORZ
-CODE_SMELL
-^
-java:S2160"+Override the "equals" method in this class.(İ§«Ò8”ì¨õ0H¨RMINORZ
-CODE_SMELL
-[
-java:S5869"*Remove duplicates in this character class.(˜±›ìıÿÿÿÿH•RMAJORZ
-CODE_SMELL

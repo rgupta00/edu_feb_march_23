@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model>
-<aop-project name="00_xml_bean_collection_mapping"/>
-<aop-project name="02_anno_spEL"/>
-<aop-project name="01_xml_spEL"/>
-</aop-reference-model>

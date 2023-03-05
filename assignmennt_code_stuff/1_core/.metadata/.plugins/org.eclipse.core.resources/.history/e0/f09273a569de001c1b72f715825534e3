@@ -1,5 +1,0 @@
-package com.productapp.service;
-
-public class ProductDaoImpl implements ProductDao {
-
-}

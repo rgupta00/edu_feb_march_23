@@ -1,7 +1,0 @@
-package com.productapp.exceptions;
-
-import java.lang.management.RuntimeMXBean;
-
-public class ProductNotFoundException extends RuntimeException {
-
-}

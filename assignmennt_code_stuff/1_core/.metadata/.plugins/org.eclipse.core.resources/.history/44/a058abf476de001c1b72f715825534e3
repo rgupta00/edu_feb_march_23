@@ -1,7 +1,0 @@
-package com.productapp.dao;
-
-import org.springframework.jdbc.core.RowMapper;
-
-public class ProductRowMapper implements RowMapper<Product> {
-
-}

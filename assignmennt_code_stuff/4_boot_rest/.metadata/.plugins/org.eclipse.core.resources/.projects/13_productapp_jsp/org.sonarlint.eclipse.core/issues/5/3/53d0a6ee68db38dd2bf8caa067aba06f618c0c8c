@@ -1,24 +1,0 @@
-
-Å	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú∏∏Û˝ˇˇˇˇHÅRMINORZ
-CODE_SMELL
-|	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑùÛÙHÇRMINORZ
-CODE_SMELL
-|	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÆ·‰HÉRMINORZ
-CODE_SMELL
-q
-java:S1854<"@Remove this useless assignment to local variable "productSaved".(Œ◊Í ˘ˇˇˇˇHÑRMAJORZ
-CODE_SMELL
-b
-java:S1481<"1Remove this unused "productSaved" local variable.(Œ◊Í ˘ˇˇˇˇHÖRMINORZ
-CODE_SMELL
-n
-java:S1854C"BRemove this useless assignment to local variable "updatedProduct".(—¿œ HáRMAJORZ
-CODE_SMELL
-r
-java:S4684B"@Replace this persistent entity with a simple POJO or DTO object.(Á™Ì©HàRCRITICALZVULNERABILITY
-_
-java:S1481C"3Remove this unused "updatedProduct" local variable.(—¿œ HâRMINORZ
-CODE_SMELL
-f
-java:S1128":Remove this unused import 'com.productapp.dao.ProductDao'.(—Ää¢HãRMINORZ
-CODE_SMELL

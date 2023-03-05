@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;07_productapp_jdbc_withoutspring/src/main/resources/db.properties&apos;&apos; to &apos;db.properties&apos;" description="Rename resource &apos;db.properties&apos;&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/db.properties&apos;" name="db.properties" stamp="1653734182972" updateReferences="true"/>
-</session>

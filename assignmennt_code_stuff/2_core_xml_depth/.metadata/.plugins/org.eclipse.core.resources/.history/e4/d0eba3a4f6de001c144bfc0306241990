@@ -1,4 +1,0 @@
-public class ExaminationResult {
-
-	private Boolean hasPassed;
-	private String resultMessage;
