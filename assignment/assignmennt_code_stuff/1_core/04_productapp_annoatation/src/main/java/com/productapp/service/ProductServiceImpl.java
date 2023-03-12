@@ -10,14 +10,11 @@ import com.productapp.dao.Product;
 import com.productapp.dao.ProductDao;
 import com.productapp.dao.ProductDaoMapImpl;
 //
-//@Service(value = "productService")
+
+@Service(value = "productService")
 public class ProductServiceImpl implements ProductService {
 
 	private ProductDao productDao;
-
-	public ProductServiceImpl() {
-	}
-
 	@Autowired
 	public ProductServiceImpl(ProductDao productDao) {
 		this.productDao = productDao;

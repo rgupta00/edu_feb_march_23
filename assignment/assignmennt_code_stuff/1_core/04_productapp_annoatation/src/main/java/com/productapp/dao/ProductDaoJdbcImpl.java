@@ -4,7 +4,8 @@ import java.math.BigDecimal;
 import java.util.*;
 
 import org.springframework.stereotype.Repository;
-//@Repository
+
+@Repository
 public class ProductDaoJdbcImpl implements ProductDao{
 
 	private HashMap<Integer, Product> productsMap;

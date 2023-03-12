@@ -5,8 +5,9 @@ import java.util.*;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
-//@Repository
-//@Primary
+
+@Repository
+@Primary
 public class ProductDaoMapImpl implements ProductDao{
 
 	private HashMap<Integer, Product> productsMap;

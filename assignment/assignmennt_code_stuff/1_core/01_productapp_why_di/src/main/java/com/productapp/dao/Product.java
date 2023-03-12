@@ -19,7 +19,4 @@ public class Product {
 		this.price = price;
 		this.isAvailable = isAvailable;
 	}
-	
-	
-	
 }
