@@ -1,0 +1,46 @@
+INFO  | 2023-03-04 09:02:44 | [main] impl.AccountServiceImpl (AccountServiceImpl.java:48) - time taken to ex transfer method is 0 ms
+INFO  | 2023-03-04 09:03:21 | [main] impl.AccountServiceImpl (AccountServiceImpl.java:55) - time taken to ex transfer method is 1000 ms
+WARN  | 2023-03-04 09:09:02 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoMapImpl' defined in file [/home/raj/Documents/edu_feb_march_23/core/12-bankapp-anno-aop/target/classes/com/bankapp/dao/AccountDaoMapImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 35
+execution(public void transfer(int fromAccId, int toAccId, double amount) )
+                                   ^^^^^^^^^
+
+INFO  | 2023-03-04 09:14:11 | [main] service.LoggingAspect (LoggingAspect.java:24) - time taken to ex transfer method is 1000 ms
+INFO  | 2023-03-04 09:14:49 | [main] service.LoggingAspect (LoggingAspect.java:24) - time taken to ex transfer method is 1000 ms
+INFO  | 2023-03-04 09:15:52 | [main] aspect.LoggingAspect (LoggingAspect.java:24) - time taken to ex transfer method is 1001 ms
+WARN  | 2023-03-04 09:17:46 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoMapImpl' defined in file [/home/raj/Documents/edu_feb_march_23/core/12-bankapp-anno-aop/target/classes/com/bankapp/dao/AccountDaoMapImpl.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+WARN  | 2023-03-04 09:18:11 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoMapImpl' defined in file [/home/raj/Documents/edu_feb_march_23/core/12-bankapp-anno-aop/target/classes/com/bankapp/dao/AccountDaoMapImpl.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+ERROR | 2023-03-04 09:22:45 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: now spend day and night to solve it
+INFO  | 2023-03-04 09:25:45 | [main] aspect.LoggingAspect (LoggingAspect.java:24) - time taken to ex transfer method is 1 ms
+INFO  | 2023-03-04 09:27:39 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAllmethod is 1 ms
+INFO  | 2023-03-04 09:28:02 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+INFO  | 2023-03-05 07:25:49 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 0 ms
+INFO  | 2023-03-05 07:42:48 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 213 ms
+INFO  | 2023-03-05 07:43:26 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 246 ms
+INFO  | 2023-03-05 07:43:34 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 239 ms
+INFO  | 2023-03-05 07:44:17 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 0 ms
+INFO  | 2023-03-05 07:44:46 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 245 ms
+INFO  | 2023-03-05 08:08:27 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 12 ms
+INFO  | 2023-03-05 08:08:40 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 13 ms
+INFO  | 2023-03-05 08:08:41 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1014 ms
+INFO  | 2023-03-05 08:08:41 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+INFO  | 2023-03-05 08:28:44 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 12 ms
+INFO  | 2023-03-05 08:28:45 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1012 ms
+INFO  | 2023-03-05 08:28:45 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+WARN  | 2023-03-05 08:33:27 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'AppConfig' may not be final. Remove the final modifier to continue.
+Offending resource: com.bankapp.config.AppConfig
+WARN  | 2023-03-05 08:33:49 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'getJdbcTemplate' must not be private or final; change the method's modifiers to continue
+Offending resource: com.bankapp.config.AppConfig
+INFO  | 2023-03-05 08:36:31 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 14 ms
+INFO  | 2023-03-05 08:36:32 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1010 ms
+INFO  | 2023-03-05 08:36:32 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+INFO  | 2023-03-17 07:35:01 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 9 ms
+INFO  | 2023-03-17 07:35:13 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 11 ms
+INFO  | 2023-03-17 07:35:14 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1009 ms
+INFO  | 2023-03-17 07:35:14 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+INFO  | 2023-03-17 07:36:25 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 192 ms
+ERROR | 2023-03-17 07:36:25 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+INFO  | 2023-03-17 07:36:49 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 9 ms
+ERROR | 2023-03-17 07:36:49 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+INFO  | 2023-03-17 07:38:14 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call addManyAccounts() method is 370 ms
+ERROR | 2023-03-17 07:39:08 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-17 07:39:22 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
