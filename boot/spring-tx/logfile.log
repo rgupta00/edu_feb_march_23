@@ -33,3 +33,13 @@ Offending resource: com.bankapp.config.AppConfig
 INFO  | 2023-03-05 08:36:31 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 14 ms
 INFO  | 2023-03-05 08:36:32 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1010 ms
 INFO  | 2023-03-05 08:36:32 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call getAll() method is 1 ms
+INFO  | 2023-03-19 07:42:01 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call transfer() method is 1024 ms
+ERROR | 2023-03-19 07:43:08 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 07:44:31 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 07:46:11 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 07:47:38 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 07:48:11 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+INFO  | 2023-03-19 07:54:58 | [main] aspect.LoggingAspect (LoggingAspect.java:27) - time taken to call addManyAccount() method is 19 ms
+ERROR | 2023-03-19 07:56:22 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 07:57:26 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null
+ERROR | 2023-03-19 08:10:53 | [main] aspect.ExceptionAspect (ExceptionAspect.java:18) - Exception occured: null

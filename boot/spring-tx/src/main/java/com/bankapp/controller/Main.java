@@ -1,5 +1,6 @@
 package com.bankapp.controller;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
@@ -19,15 +20,10 @@ public class Main {
 
 		AccountService accountService=(AccountService) ctx.getBean("accService");
 		 
-		//System.out.println(accountService.getClass());
-		List<Account> accounts=accountService.getAll();
-		accounts.forEach(a-> System.out.println(a));
+	
+		//accountService.transfer(1, 2, 10);
 
-		accountService.transfer(1, 2, 10);
-//		
-		accounts=accountService.getAll();
-		accounts.forEach(a-> System.out.println(a));
-
+		accountService.addManyAccount();
 		
 	}
 }

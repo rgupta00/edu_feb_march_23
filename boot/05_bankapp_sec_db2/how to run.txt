@@ -1,0 +1,23 @@
+http://localhost:8090/bankapp/api/transfer
+POST
+
+{
+  "fromAccId":1,
+  "toAccId":2,
+  "amount":20
+}
+
+http://localhost:8090/bankapp/api/deposit
+POST
+{
+  "id":1,
+  "amount":20
+}
+
+http://localhost:8090/bankapp/api/withdraw
+POST
+
+{
+  "id":1,
+  "amount":20
+}

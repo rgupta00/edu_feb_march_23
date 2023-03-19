@@ -12,4 +12,5 @@ public interface AccountDao {
 	public void addAccount(Account account);
 	
 	public void deleteAccount(int id);
+	public void addBatch(List<Account> accounts);
 }

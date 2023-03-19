@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 @Primary
@@ -39,10 +41,13 @@ public class AccountDaoJdbcTemplateImpl implements AccountDao{
 				new Object[] {account.getBalance(), account.getId()});
 	}
 
+	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public void addAccount(Account account) {
+		System.out.println("method start:addAccount ");
 		jdbcTemplate.update("insert into account2(name,balance) values(?,?)",
 				new Object[] {account.getName(), account.getBalance()});
+		System.out.println("method end:addAccount ");
 	}
 
 	@Override
@@ -50,6 +55,16 @@ public class AccountDaoJdbcTemplateImpl implements AccountDao{
 		jdbcTemplate.update("detete from account2 where id=?",id);
 	}
 
+	public void addBatch(List<Account> accounts) {
+		List<Object[]> batchArgs=new ArrayList<Object[]>();
+		//List<Account> accounts============> List<Object[]> batchArgs
+		for(Account account: accounts) {
+			Object[]arrObj= {account.getName(), account.getBalance()};
+			batchArgs.add(arrObj);
+		}
+		
+		jdbcTemplate.batchUpdate("insert into account2(name,balance) values(?,?)", batchArgs);
+	}
 }
 
 

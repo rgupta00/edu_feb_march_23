@@ -13,18 +13,28 @@ public class LoggingAspect {
 
 	private Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-	@Around("execution( * com.bankapp.service..*Impl.*(..))")
+	@Around("target(javax.sql.DataSource)")
 	public Object aroundLogging(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-		
-		String targetMethodName=proceedingJoinPoint.getSignature().getName();
-		
-		long start = System.currentTimeMillis();
+
+		System.out.println("database tracker: " + proceedingJoinPoint.getSignature());
 
 		Object value = proceedingJoinPoint.proceed();
 
-		long end = System.currentTimeMillis();
-
-		logger.info("time taken to call " +targetMethodName+ "() method is " + (end - start) + " ms");
 		return value;
 	}
+
+//	@Around("execution( * com.bankapp.service..*Impl.*(..))")
+//	public Object aroundLogging(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//		
+//		String targetMethodName=proceedingJoinPoint.getSignature().getName();
+//		
+//		long start = System.currentTimeMillis();
+//
+//		Object value = proceedingJoinPoint.proceed();
+//
+//		long end = System.currentTimeMillis();
+//
+//		logger.info("time taken to call " +targetMethodName+ "() method is " + (end - start) + " ms");
+//		return value;
+//	}
 }

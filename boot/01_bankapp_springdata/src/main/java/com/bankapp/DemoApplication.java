@@ -26,8 +26,8 @@ public class DemoApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		//init the things
 		
-		//accountService.addAccount(new Account("aman",new BigDecimal(1000), "aman@gmail.com","5534345555"));
-		//accountService.addAccount(new Account("suman",new BigDecimal(1000), "suman@gmail.com","5530045555"));
+		accountService.addAccount(new Account("aman",new BigDecimal(1000), "aman@gmail.com","5534345555"));
+		accountService.addAccount(new Account("suman",new BigDecimal(1000), "suman@gmail.com","5530045555"));
 		System.out.println("--------------added---------------");
 		
 	}
